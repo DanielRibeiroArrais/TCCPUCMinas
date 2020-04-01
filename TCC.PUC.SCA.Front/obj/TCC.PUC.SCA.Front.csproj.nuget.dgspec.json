@@ -1,0 +1,321 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Projetos\\Pessoal\\TCC.PUC.SCA\\TCC.PUC.SCA.Front\\TCC.PUC.SCA.Front.csproj": {}
+  },
+  "projects": {
+    "C:\\Projetos\\Pessoal\\TCC.PUC.SCA\\TCC.PUC.SCA.Business\\TCC.PUC.SCA.Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projetos\\Pessoal\\TCC.PUC.SCA\\TCC.PUC.SCA.Business\\TCC.PUC.SCA.Business.csproj",
+        "projectName": "TCC.PUC.SCA.Business",
+        "projectPath": "C:\\Projetos\\Pessoal\\TCC.PUC.SCA\\TCC.PUC.SCA.Business\\TCC.PUC.SCA.Business.csproj",
+        "packagesPath": "C:\\Users\\daniel.ribeiro\\.nuget\\packages\\",
+        "outputPath": "C:\\Projetos\\Pessoal\\TCC.PUC.SCA\\TCC.PUC.SCA.Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\daniel.ribeiro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://bemahybrid-nuget.azurewebsites.net/nuget": {},
+          "http://nugetserver.live.totvs.com.br/nuget": {},
+          "http://platform.bematech.com.br/nuget/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Projetos\\Pessoal\\TCC.PUC.SCA\\TCC.PUC.SCA.Data\\TCC.PUC.SCA.Data.csproj": {
+                "projectPath": "C:\\Projetos\\Pessoal\\TCC.PUC.SCA\\TCC.PUC.SCA.Data\\TCC.PUC.SCA.Data.csproj"
+              },
+              "C:\\Projetos\\Pessoal\\TCC.PUC.SCA\\TCC.PUC.SCA.Model\\TCC.PUC.SCA.Model.csproj": {
+                "projectPath": "C:\\Projetos\\Pessoal\\TCC.PUC.SCA\\TCC.PUC.SCA.Model\\TCC.PUC.SCA.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projetos\\Pessoal\\TCC.PUC.SCA\\TCC.PUC.SCA.Data\\TCC.PUC.SCA.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projetos\\Pessoal\\TCC.PUC.SCA\\TCC.PUC.SCA.Data\\TCC.PUC.SCA.Data.csproj",
+        "projectName": "TCC.PUC.SCA.Data",
+        "projectPath": "C:\\Projetos\\Pessoal\\TCC.PUC.SCA\\TCC.PUC.SCA.Data\\TCC.PUC.SCA.Data.csproj",
+        "packagesPath": "C:\\Users\\daniel.ribeiro\\.nuget\\packages\\",
+        "outputPath": "C:\\Projetos\\Pessoal\\TCC.PUC.SCA\\TCC.PUC.SCA.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\daniel.ribeiro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://bemahybrid-nuget.azurewebsites.net/nuget": {},
+          "http://nugetserver.live.totvs.com.br/nuget": {},
+          "http://platform.bematech.com.br/nuget/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Projetos\\Pessoal\\TCC.PUC.SCA\\TCC.PUC.SCA.Model\\TCC.PUC.SCA.Model.csproj": {
+                "projectPath": "C:\\Projetos\\Pessoal\\TCC.PUC.SCA\\TCC.PUC.SCA.Model\\TCC.PUC.SCA.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projetos\\Pessoal\\TCC.PUC.SCA\\TCC.PUC.SCA.Front\\TCC.PUC.SCA.Front.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projetos\\Pessoal\\TCC.PUC.SCA\\TCC.PUC.SCA.Front\\TCC.PUC.SCA.Front.csproj",
+        "projectName": "TCC.PUC.SCA.Front",
+        "projectPath": "C:\\Projetos\\Pessoal\\TCC.PUC.SCA\\TCC.PUC.SCA.Front\\TCC.PUC.SCA.Front.csproj",
+        "packagesPath": "C:\\Users\\daniel.ribeiro\\.nuget\\packages\\",
+        "outputPath": "C:\\Projetos\\Pessoal\\TCC.PUC.SCA\\TCC.PUC.SCA.Front\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\daniel.ribeiro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://bemahybrid-nuget.azurewebsites.net/nuget": {},
+          "http://nugetserver.live.totvs.com.br/nuget": {},
+          "http://platform.bematech.com.br/nuget/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Projetos\\Pessoal\\TCC.PUC.SCA\\TCC.PUC.SCA.Business\\TCC.PUC.SCA.Business.csproj": {
+                "projectPath": "C:\\Projetos\\Pessoal\\TCC.PUC.SCA\\TCC.PUC.SCA.Business\\TCC.PUC.SCA.Business.csproj"
+              },
+              "C:\\Projetos\\Pessoal\\TCC.PUC.SCA\\TCC.PUC.SCA.Model\\TCC.PUC.SCA.Model.csproj": {
+                "projectPath": "C:\\Projetos\\Pessoal\\TCC.PUC.SCA\\TCC.PUC.SCA.Model\\TCC.PUC.SCA.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.9.10, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[4.7.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projetos\\Pessoal\\TCC.PUC.SCA\\TCC.PUC.SCA.Model\\TCC.PUC.SCA.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projetos\\Pessoal\\TCC.PUC.SCA\\TCC.PUC.SCA.Model\\TCC.PUC.SCA.Model.csproj",
+        "projectName": "TCC.PUC.SCA.Model",
+        "projectPath": "C:\\Projetos\\Pessoal\\TCC.PUC.SCA\\TCC.PUC.SCA.Model\\TCC.PUC.SCA.Model.csproj",
+        "packagesPath": "C:\\Users\\daniel.ribeiro\\.nuget\\packages\\",
+        "outputPath": "C:\\Projetos\\Pessoal\\TCC.PUC.SCA\\TCC.PUC.SCA.Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\daniel.ribeiro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://bemahybrid-nuget.azurewebsites.net/nuget": {},
+          "http://nugetserver.live.totvs.com.br/nuget": {},
+          "http://platform.bematech.com.br/nuget/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

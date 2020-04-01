@@ -1,0 +1,80 @@
+﻿@model IEnumerable<TCC.PUC.SCA.Model.DBEntities.Pessoa>
+
+@{
+    ViewData["Title"] = "List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    var lBarragens = (List<TCC.PUC.SCA.Model.DBEntities.Barragem>)ViewBag.Barragens;
+}
+
+<div class="row">
+    <div class="col-md-8">
+        <h5>Lista Pessoas</h5>
+    </div>
+    <div class="col-md-4">
+        <a asp-action="Create" class="btn btn-primary float-right">
+            <i class="fas fa-user-plus"></i>
+            <span class="bold">Novo</span>
+        </a>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <div class="col-md-12">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="">
+                        @Html.DisplayNameFor(model => model.Nome)
+                    </th>
+                    <th class="text-center">
+                        @Html.DisplayNameFor(model => model.BarragemId)
+                    </th>
+                    <th class="text-center">
+                        @Html.DisplayNameFor(model => model.Situacao)
+                    </th>
+                    <th class="text-center">
+                        @Html.DisplayNameFor(model => model.DataInclusao)
+                    </th>
+                    <th class="text-center">
+                        @Html.DisplayNameFor(model => model.DataAlteracao)
+                    </th>
+                    <th class="text-center" style="min-width:162px;width:162px;">Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Nome)
+                        </td>
+                        <td class="text-center">
+                            @Html.DisplayFor(modelItem => lBarragens.Find(x => x.Id == (item.BarragemId)).Nome)
+                        </td>
+                        <td class="text-center">
+                            @Html.DisplayFor(modelItem => item.Situacao)
+                        </td>
+                        <td class="text-center">
+                            @Html.DisplayFor(modelItem => item.DataInclusao)
+                        </td>
+                        <td class="text-center">
+                            @Html.DisplayFor(modelItem => item.DataAlteracao)
+                        </td>
+                        <td class="text-center">
+                            <a href="@Url.Action("Edit", new { id = item.Id })" class="btn btn-sm btn-light" title="Editar">
+                                <i class="fas fa-edit"></i>
+                                <span class="bold">Editar</span>
+                            </a>
+                            |
+                            <a href="@Url.Action("Delete", new { id = item.Id })" class="btn btn-sm btn-light" title="Excluir">
+                                <i class="fas fa-trash-alt"></i>
+                                <span class="bold">Excluir</span>
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,66 @@
+﻿@model IEnumerable<TCC.PUC.SCA.Model.SpecificEntities.Common.DadosCompletoIncidentes>
+
+@{
+    ViewData["Title"] = "List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-8">
+        <h5>Lista Incidentes</h5>
+    </div>
+    @*<div class="col-md-4">
+            <a asp-action="Create" class="btn btn-primary float-right">
+                <i class="fas fa-user-plus"></i>
+                <span class="bold">Novo</span>
+            </a>
+        </div>*@
+</div>
+<hr />
+<div class="row">
+    <div class="col-md-12">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="">
+                        @Html.DisplayNameFor(model => model.Barragem.Nome)
+                    </th>
+                    <th class="text-center">
+                        @Html.DisplayNameFor(model => model.Sensor.Nome)
+                    </th>
+                    <th class="text-center">
+                        @Html.DisplayNameFor(model => model.Sensor.Tipo)
+                    </th>
+                    <th class="text-center">
+                        @Html.DisplayNameFor(model => model.PlanoAcao.Mensagem)
+                    </th>
+                    <th class="text-center">
+                        @Html.DisplayNameFor(model => model.Incidente.DataInclusao)
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Barragem.Nome)
+                        </td>
+                        <td class="text-center">
+                            @Html.DisplayFor(modelItem => item.Sensor.Nome)
+                        </td>
+                        <td class="text-center">
+                            @Html.DisplayFor(modelItem => item.Sensor.Tipo)
+                        </td>
+                        <td class="text-center">
+                            @Html.DisplayFor(modelItem => item.PlanoAcao.Mensagem)
+                        </td>
+                        <td class="text-center">
+                            @Html.DisplayFor(modelItem => item.Incidente.DataInclusao)
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

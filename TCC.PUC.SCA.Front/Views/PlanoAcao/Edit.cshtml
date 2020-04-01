@@ -1,0 +1,61 @@
+﻿@model TCC.PUC.SCA.Model.DBEntities.PlanoAcao
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h5>Editar Plano de Ação</h5>
+<hr />
+<form asp-action="Edit">
+    <div class="row">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input type="hidden" asp-for="Id" class="form-control" />
+        <div class="form-group col-md-6">
+            <label asp-for="Tipo" class="control-label"></label>
+            <input asp-for="Tipo" class="form-control" />
+            <span asp-validation-for="Tipo" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-3">
+            <label asp-for="De" class="control-label"></label>
+            <input asp-for="De" class="form-control" />
+            <span asp-validation-for="De" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-3">
+            <label asp-for="Ate" class="control-label"></label>
+            <input asp-for="Ate" class="form-control" />
+            <span asp-validation-for="Ate" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-12">
+            <label asp-for="Mensagem" class="control-label"></label>
+            <input asp-for="Mensagem" class="form-control" />
+            <span asp-validation-for="Mensagem" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <div class="form-group">
+                <label asp-for="DataInclusao" class="control-label"></label>
+                <input type="datetime" asp-for="DataInclusao" asp-format="{0:dd/MM/yyyy hh:mm:ss}" class="form-control" disabled />
+                <span asp-validation-for="DataInclusao" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+                <label asp-for="DataAlteracao" class="control-label"></label>
+                <input type="datetime" asp-for="DataAlteracao" asp-format="{0:dd/MM/yyyy hh:mm:ss}" class="form-control" disabled />
+                <span asp-validation-for="DataAlteracao" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div class="form-group">
+        <button type="submit" value="Confirmar" class="btn btn-primary rounded float-right"><i class="fas fa-save"></i> Confirmar</button>
+    </div>
+</form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,24 @@
+﻿@using System.Security.Claims;
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    var texto = "";
+
+    if (DateTime.Now.Hour > 6 && DateTime.Now.Hour < 12)
+    {
+        texto = "Bom dia";
+    }
+    else if (DateTime.Now.Hour >= 12 && DateTime.Now.Hour < 18)
+    {
+        texto = "Boa tarde";
+    }
+    else
+    {
+        texto = "Boa noite";
+    }
+}
+
+@texto
+@User.Claims.Where(c => c.Type == ClaimTypes.NameIdentifier).Select(c => c.Value).FirstOrDefault()

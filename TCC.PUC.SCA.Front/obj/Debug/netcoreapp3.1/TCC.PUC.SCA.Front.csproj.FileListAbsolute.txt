@@ -1,0 +1,8 @@
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Front\obj\Debug\netcoreapp3.1\TCC.PUC.SCA.Front.csprojAssemblyReference.cache
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Front\obj\Debug\netcoreapp3.1\TCC.PUC.SCA.Front.MvcApplicationPartsAssemblyInfo.cache
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Front\obj\Debug\netcoreapp3.1\TCC.PUC.SCA.Front.AssemblyInfoInputs.cache
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Front\obj\Debug\netcoreapp3.1\TCC.PUC.SCA.Front.AssemblyInfo.cs
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Front\obj\Debug\netcoreapp3.1\TCC.PUC.SCA.Front.TagHelpers.input.cache
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Front\obj\Debug\netcoreapp3.1\TCC.PUC.SCA.Front.TagHelpers.output.cache
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Front\obj\Debug\netcoreapp3.1\TCC.PUC.SCA.Front.dll
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Front\obj\Debug\netcoreapp3.1\TCC.PUC.SCA.Front.pdb

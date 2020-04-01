@@ -1,0 +1,61 @@
+﻿@model TCC.PUC.SCA.Model.DBEntities.Barragem
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h5>Cadastrar Nova Barragem</h5>
+<hr />
+
+<form asp-action="Create">
+    <div class="row">
+        <div class="col-md-12">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Nome" class="control-label"></label>
+                <input asp-for="Nome" class="form-control" />
+                <span asp-validation-for="Nome" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-2 text-center">
+            <label for="Active" class="control-label">Ativo</label>
+            <div class="input-group">
+                <div class="btn-group radioBtn mx-auto">
+                    <a class="btn btn-primary active" data-toggle="Active" data-title="True" onclick="setarValorBoleano(true, 'Active')">Sim</a>
+                    <a class="btn btn-primary notActive" data-toggle="Active" data-title="False" onclick="setarValorBoleano(false, 'Active')">Não</a>
+                </div>
+                <input type="hidden" asp-for="Situacao" value="True">
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Latitude" class="control-label"></label>
+                <input asp-for="Latitude" class="form-control" />
+                <span asp-validation-for="Latitude" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Longitude" class="control-label"></label>
+                <input asp-for="Longitude" class="form-control" />
+                <span asp-validation-for="Longitude" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="form-group">
+        <button type="submit" value="Confirmar" class="btn btn-primary rounded float-right"><i class="fas fa-save"></i> Confirmar</button>
+    </div>
+</form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+

@@ -1,0 +1,148 @@
+﻿@model List<Map>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutA.cshtml";
+}
+
+<title>TCC PUC Minas</title>
+
+<div id="myMap" style="position:relative; width:100%; min-height:575px;margin-top: -17px;"></div>
+
+<div class="fixed-bottom" style="margin-bottom:5px;margin-right:5px;">
+    <div class="row">
+
+        <div class="col-md-12">
+            <div class="col-md-2 border border-secondary float-right legenda" style="background-color:white">
+                <div class="row legendaTitulo">
+                    <div class="col-md-12 text-center">
+                        Legenda Status Barragens
+                    </div>
+                </div>
+                <div class="row legendaConteudo">
+                    <div class="col-md-6">
+                        <i class="fas fa-dot-circle" style="color:green"></i> Normal
+                    </div>
+                    <div class="col-md-6">
+                        <i class="fas fa-dot-circle" style="color:gray"></i> Alerta
+                    </div>
+                </div>
+                <div class="row legendaConteudo">
+                    <div class="col-md-6">
+                        <i class="fas fa-dot-circle" style="color:blue"></i> Perigo
+                    </div>
+                    <div class="col-md-6">
+                        <i class="fas fa-dot-circle" style="color:red"></i> Evacuação
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<link href="~/css/legenda.css" rel="stylesheet" />
+<script type="text/javascript">
+    var map = null;
+
+    var defaultColor = 'blue';
+    var hoverColor = 'red';
+    var mouseDownColor = 'purple';
+
+    function LoadMap() {
+        map = new Microsoft.Maps.Map('#myMap', {
+            credentials: "AoLdAUWVS63SFgtfFCGVQOWD8t-g4jg2GdZi8F7Cj1Zh9oDgdS8aK50JIHVfWkYF",
+            showLocateMeButton: false,
+            showMapTypeSelector: false,
+            showZoomButtons: false,
+            enableClickableLogo: false,
+            disableScrollWheelZoom: true
+        });
+
+        var infobox = null;
+
+        function addMarker(latitude, longitude, title, description, pid)
+        {
+            var pushpin = "";
+
+            if (description == "Normal") {
+                pushpin = new Microsoft.Maps.Pushpin(new Microsoft.Maps.Location(parseFloat(latitude.replace(',', '.')), parseFloat(longitude.replace(',', '.'))), { color: 'green', draggable: true });
+            }
+            else if (description == "Alerta") {
+                pushpin = new Microsoft.Maps.Pushpin(new Microsoft.Maps.Location(parseFloat(latitude.replace(',', '.')), parseFloat(longitude.replace(',', '.'))), { color: 'gray', draggable: true });
+            }
+            else if (description == "Perigo") {
+                pushpin = new Microsoft.Maps.Pushpin(new Microsoft.Maps.Location(parseFloat(latitude.replace(',', '.')), parseFloat(longitude.replace(',', '.'))), { color: 'blue', draggable: true });
+            }
+            else if (description == "Evacua&#xE7;&#xE3;o") {
+                pushpin = new Microsoft.Maps.Pushpin(new Microsoft.Maps.Location(parseFloat(latitude.replace(',', '.')), parseFloat(longitude.replace(',', '.'))), { color: 'red', draggable: true });
+            }
+            else {
+                pushpin = new Microsoft.Maps.Pushpin(new Microsoft.Maps.Location(parseFloat(latitude.replace(',', '.')), parseFloat(longitude.replace(',', '.'))), { color: 'blue', draggable: true });
+            }
+
+            infobox = new Microsoft.Maps.Infobox(pushpin.getLocation(), {
+                visible : false
+            });
+
+            pushpin.metadata = {
+                id: pid,
+                title: title,
+                description: description
+            };
+
+            Microsoft.Maps.Events.addHandler(pushpin, 'mouseout', hideInfobox);
+            Microsoft.Maps.Events.addHandler(pushpin, 'mouseover', showInfobox);
+
+            infobox.setMap(map);
+            map.entities.push(pushpin);
+            pushpin.setOptions({ enableHoverStyle: true });
+        };
+
+        function showInfobox(e) {
+
+            var description = "";
+
+            if (e.target.metadata.description == "Normal") {
+                description = ['<table><tr><td>Status Barragem:</td><td><b><span style="color:green">', e.target.metadata.description, '</span></b></td></tr>'];
+            }
+            else if (e.target.metadata.description == "Alerta") {
+                description = ['<table><tr><td>Status Barragem:</td><td><b><span style="color:gray">', e.target.metadata.description, '</span></b></td></tr>'];
+            }
+            else if (e.target.metadata.description == "Perigo") {
+                description = ['<table><tr><td>Status Barragem:</td><td><b><span style="color:blue ">', e.target.metadata.description, '</span></b></td></tr>'];
+            }
+            else if (e.target.metadata.description == "Evacua&#xE7;&#xE3;o") {
+                description = ['<table><tr><td>Status Barragem:</td><td><b><span style="color:red">', e.target.metadata.description, '</span></b></td></tr>'];
+            }
+            else {
+                description = ['<table><tr><td>Status Barragem:</td><td><b><span style="color:blue">', e.target.metadata.description, '</span></b></td></tr>'];
+            }
+
+            if (e.target.metadata) {
+                infobox.setOptions({
+                    location: e.target.getLocation(),
+                    title: e.target.metadata.title,
+                    description: description.join(''),
+                    visible: true
+                });
+            }
+        }
+
+        function hideInfobox(e) {
+            infobox.setOptions({ visible: false });
+        }
+
+        @if (Model.Count > 0)
+        {
+            foreach (var item in Model)
+            {
+                @:addMarker('@item.Latitude', '@item.Longitude', '@item.Nome', '@item.Status', @item.Id);
+            }
+        }
+
+        map.setView({
+            zoom: 9,
+            center: new Microsoft.Maps.Location(-23.542151, -46.309812)
+        });
+    }
+</script>
+<script type="text/javascript" src="https://www.bing.com/api/maps/mapcontrol?callback=LoadMap" async defer></script>

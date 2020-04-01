@@ -1,0 +1,106 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29025.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TCC.PUC.SCA.Front", "TCC.PUC.SCA.Front\TCC.PUC.SCA.Front.csproj", "{3F8597E2-07EE-40B7-B598-D18546C11932}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TCC.PUC.SCA.Model", "TCC.PUC.SCA.Model\TCC.PUC.SCA.Model.csproj", "{A3CB8D5F-5363-4F7E-90DA-C7DBC4C5C962}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TCC.PUC.SCA.Data", "TCC.PUC.SCA.Data\TCC.PUC.SCA.Data.csproj", "{449A436C-7590-4006-BF27-24B98AB2C64F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TCC.PUC.SCA.Business", "TCC.PUC.SCA.Business\TCC.PUC.SCA.Business.csproj", "{CB7E75B7-8CB5-40C3-AC5C-40C4FD6D8812}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TCC.PUC.SCA.API", "TCC.PUC.SCA.API\TCC.PUC.SCA.API.csproj", "{FED68A6C-FD90-4A90-A0E6-7F375C778FE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCC.PUC.SCA.Alert", "TCC.PUC.SCA.Alert\TCC.PUC.SCA.Alert.csproj", "{F727F0EC-3C6B-4967-BCE0-51557D389416}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCC.PUC.SCA.Alert.Email", "TCC.PUC.SCA.Alert.Email\TCC.PUC.SCA.Alert.Email.csproj", "{38FBF535-3868-4E0F-8BFE-B7E8C4970EF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCC.PUC.SCA.Alert.SMS", "TCC.PUC.SCA.Alert.SMS\TCC.PUC.SCA.Alert.SMS.csproj", "{7D63DF55-08F6-4DAE-B528-A4DCD574DAEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCC.PUC.SCA.Alert.WhatsApp", "TCC.PUC.SCA.Alert.WhatsApp\TCC.PUC.SCA.Alert.WhatsApp.csproj", "{A9AF5DDC-3A47-41E0-9995-54E23DBCE52A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F8597E2-07EE-40B7-B598-D18546C11932}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F8597E2-07EE-40B7-B598-D18546C11932}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F8597E2-07EE-40B7-B598-D18546C11932}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F8597E2-07EE-40B7-B598-D18546C11932}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3CB8D5F-5363-4F7E-90DA-C7DBC4C5C962}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3CB8D5F-5363-4F7E-90DA-C7DBC4C5C962}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3CB8D5F-5363-4F7E-90DA-C7DBC4C5C962}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3CB8D5F-5363-4F7E-90DA-C7DBC4C5C962}.Release|Any CPU.Build.0 = Release|Any CPU
+		{449A436C-7590-4006-BF27-24B98AB2C64F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{449A436C-7590-4006-BF27-24B98AB2C64F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{449A436C-7590-4006-BF27-24B98AB2C64F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{449A436C-7590-4006-BF27-24B98AB2C64F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB7E75B7-8CB5-40C3-AC5C-40C4FD6D8812}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB7E75B7-8CB5-40C3-AC5C-40C4FD6D8812}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB7E75B7-8CB5-40C3-AC5C-40C4FD6D8812}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB7E75B7-8CB5-40C3-AC5C-40C4FD6D8812}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FED68A6C-FD90-4A90-A0E6-7F375C778FE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FED68A6C-FD90-4A90-A0E6-7F375C778FE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FED68A6C-FD90-4A90-A0E6-7F375C778FE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FED68A6C-FD90-4A90-A0E6-7F375C778FE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F727F0EC-3C6B-4967-BCE0-51557D389416}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F727F0EC-3C6B-4967-BCE0-51557D389416}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F727F0EC-3C6B-4967-BCE0-51557D389416}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F727F0EC-3C6B-4967-BCE0-51557D389416}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38FBF535-3868-4E0F-8BFE-B7E8C4970EF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38FBF535-3868-4E0F-8BFE-B7E8C4970EF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38FBF535-3868-4E0F-8BFE-B7E8C4970EF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38FBF535-3868-4E0F-8BFE-B7E8C4970EF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D63DF55-08F6-4DAE-B528-A4DCD574DAEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D63DF55-08F6-4DAE-B528-A4DCD574DAEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D63DF55-08F6-4DAE-B528-A4DCD574DAEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D63DF55-08F6-4DAE-B528-A4DCD574DAEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9AF5DDC-3A47-41E0-9995-54E23DBCE52A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9AF5DDC-3A47-41E0-9995-54E23DBCE52A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9AF5DDC-3A47-41E0-9995-54E23DBCE52A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9AF5DDC-3A47-41E0-9995-54E23DBCE52A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {53A781B9-7117-4501-8944-5E3A46E5DAC6}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 10
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://adnewsystem.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = TCC.PUC.SCA.Front\\TCC.PUC.SCA.Front.csproj
+		SccProjectName1 = TCC.PUC.SCA.Front
+		SccLocalPath1 = TCC.PUC.SCA.Front
+		SccProjectUniqueName2 = TCC.PUC.SCA.Model\\TCC.PUC.SCA.Model.csproj
+		SccProjectName2 = TCC.PUC.SCA.Model
+		SccLocalPath2 = TCC.PUC.SCA.Model
+		SccProjectUniqueName3 = TCC.PUC.SCA.Data\\TCC.PUC.SCA.Data.csproj
+		SccProjectName3 = TCC.PUC.SCA.Data
+		SccLocalPath3 = TCC.PUC.SCA.Data
+		SccProjectUniqueName4 = TCC.PUC.SCA.Business\\TCC.PUC.SCA.Business.csproj
+		SccProjectName4 = TCC.PUC.SCA.Business
+		SccLocalPath4 = TCC.PUC.SCA.Business
+		SccProjectUniqueName5 = TCC.PUC.SCA.Alert\\TCC.PUC.SCA.Alert.csproj
+		SccProjectName5 = TCC.PUC.SCA.Alert
+		SccLocalPath5 = TCC.PUC.SCA.Alert
+		SccProjectUniqueName6 = TCC.PUC.SCA.Alert.Email\\TCC.PUC.SCA.Alert.Email.csproj
+		SccProjectName6 = TCC.PUC.SCA.Alert.Email
+		SccLocalPath6 = TCC.PUC.SCA.Alert.Email
+		SccProjectUniqueName7 = TCC.PUC.SCA.Alert.SMS\\TCC.PUC.SCA.Alert.SMS.csproj
+		SccProjectName7 = TCC.PUC.SCA.Alert.SMS
+		SccLocalPath7 = TCC.PUC.SCA.Alert.SMS
+		SccProjectUniqueName8 = TCC.PUC.SCA.API\\TCC.PUC.SCA.API.csproj
+		SccProjectName8 = TCC.PUC.SCA.API
+		SccLocalPath8 = TCC.PUC.SCA.API
+		SccProjectUniqueName9 = TCC.PUC.SCA.Alert.WhatsApp\\TCC.PUC.SCA.Alert.WhatsApp.csproj
+		SccProjectName9 = TCC.PUC.SCA.Alert.WhatsApp
+		SccLocalPath9 = TCC.PUC.SCA.Alert.WhatsApp
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,109 @@
+﻿@model TCC.PUC.SCA.Model.DBEntities.Usuario
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TCC PUC Minas - DRA</title>
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/lib/bootstrap-toggle/css/bootstrap-toggle.css" />
+        <link href="~/lib/font-awesome/css/all.css" rel="stylesheet">
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
+              crossorigin="anonymous"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+              asp-fallback-href="~/lib/font-awesome/css/all.min.css" asp-fallback-test-class="sr-only"
+              asp-fallback-test-property="position"
+              asp-fallback-test-value="absolute" />
+    </environment>
+    <link href="https://fonts.googleapis.com/css?family=Lalezar" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/login.css" />
+</head>
+<body>
+    <div id="backImage" class="fade-in" style="width:100%; height:100vh; background-size:cover; background-repeat: no-repeat; background-position: center center,">
+        <div class="container">
+            <div class="d-flex justify-content-center h-100">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <font style="color:#000000;font-size:22px;font-family: 'Lalezar';">
+                                TCC.PUC.SCA
+                            </font>
+                            <br />
+                            <font style="color:red;font-size:30px;font-family: 'Lalezar';">
+                                ACESSO NEGADO
+                            </font>
+                        </div>
+                        <div class="d-flex justify-content-end social_icon">
+                            <span>
+                                <img src="~/images/logo.png" width="80px" />
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+
+                        @if (TempData["UserLoginFailed"] != null)
+                        {
+                            <p class="alert alert-danger">@TempData["UserLoginFailed"]</p>
+                        }
+                        <form asp-action="LogoutForce">
+                            <div class="row">
+                                <div class="col-md-12 float-right">
+                                    <input type="submit" value="Home" class="btn float-right login_btn">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        <script src="~/lib/bootstrap-toggle/js/bootstrap-toggle.js"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o">
+        </script>
+    </environment>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+            var imagesDay = ['day1.jpeg', 'day2.jpeg', 'day3.jpeg', 'day4.jpeg', 'day5.jpeg', 'day6.jpeg', 'day7.jpeg', 'day8.jpeg', 'day9.jpeg', 'day10.jpeg', 'day11.jpeg', 'day12.jpeg', 'day13.jpeg', 'day14.jpeg', 'day15.jpeg', 'day16.jpeg', 'day17.jpeg', 'day18.jpeg', 'day19.jpeg', 'day20.jpeg', 'day21.jpeg', 'day22.jpeg', 'day23.jpeg', 'day24.jpeg', 'day25.jpeg'];
+            var imagesNight = ['night1.jpeg', 'night2.jpeg', 'night3.jpeg', 'night4.jpeg', 'night5.jpeg', 'night6.jpeg', 'night7.jpeg', 'night8.jpeg', 'night9.jpeg', 'night10.jpeg', 'night11.jpeg', 'night12.jpeg', 'night13.jpeg', 'night14.jpeg', 'night15.jpeg', 'night16.jpeg', 'night17.jpeg', 'night18.jpeg', 'night19.jpeg', 'night20.jpeg', 'night21.jpeg', 'night22.jpeg', 'night23.jpeg', 'night24.jpeg', 'night25.jpeg'];
+            var dt = new Date();
+            var time = dt.getHours();
+            if (time > 18) {
+                $('#backImage').css('background-image', 'url(../images/backgrounds/' + imagesNight[Math.floor(Math.random() * imagesNight.length)] + ')');
+            }
+            else {
+                $('#backImage').css('background-image', 'url(../images/backgrounds/' + imagesDay[Math.floor(Math.random() * imagesDay.length)] + ')');
+            }
+        });
+    </script>
+</body>
+</html>

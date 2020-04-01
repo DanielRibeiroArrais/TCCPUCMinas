@@ -1,0 +1,10 @@
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Alert.Email\bin\Debug\TCC.PUC.SCA.Alert.Email.exe.config
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Alert.Email\bin\Debug\TCC.PUC.SCA.Alert.Email.exe
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Alert.Email\bin\Debug\TCC.PUC.SCA.Alert.Email.pdb
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Alert.Email\bin\Debug\Microsoft.Diagnostics.Tracing.EventSource.dll
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Alert.Email\bin\Debug\RabbitMQ.Client.dll
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Alert.Email\bin\Debug\Microsoft.Diagnostics.Tracing.EventSource.xml
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Alert.Email\bin\Debug\RabbitMQ.Client.xml
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Alert.Email\obj\Debug\TCC.PUC.SCA.Alert.Email.csproj.CopyComplete
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Alert.Email\obj\Debug\TCC.PUC.SCA.Alert.Email.exe
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Alert.Email\obj\Debug\TCC.PUC.SCA.Alert.Email.pdb

@@ -1,0 +1,8 @@
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Model\bin\Debug\netcoreapp2.2\TCC.PUC.SCA.Model.deps.json
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Model\bin\Debug\netcoreapp2.2\TCC.PUC.SCA.Model.dll
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Model\bin\Debug\netcoreapp2.2\TCC.PUC.SCA.Model.pdb
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Model\obj\Debug\netcoreapp2.2\TCC.PUC.SCA.Model.AssemblyInfoInputs.cache
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Model\obj\Debug\netcoreapp2.2\TCC.PUC.SCA.Model.AssemblyInfo.cs
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Model\obj\Debug\netcoreapp2.2\TCC.PUC.SCA.Model.dll
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Model\obj\Debug\netcoreapp2.2\TCC.PUC.SCA.Model.pdb
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Model\obj\Debug\netcoreapp2.2\TCC.PUC.SCA.Model.csprojAssemblyReference.cache

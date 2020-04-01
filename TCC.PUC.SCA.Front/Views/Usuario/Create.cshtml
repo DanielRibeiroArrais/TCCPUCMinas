@@ -1,0 +1,96 @@
+﻿@model TCC.PUC.SCA.Model.DBEntities.Usuario
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h5>Cadastrar Novo Usuário</h5>
+<hr />
+
+<form asp-action="Create">
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label asp-for="NomeCompleto" class="control-label"></label>
+            <input asp-for="NomeCompleto" class="form-control" />
+            <span asp-validation-for="NomeCompleto" class="text-danger"></span>
+        </div>
+
+        <div class="form-group col-md-3">
+            <label asp-for="Email" class="control-label"></label>
+            <input asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+        <div class="form-group col-md-3">
+            <label asp-for="NomeUsuario" class="control-label"></label>
+            <input asp-for="NomeUsuario" class="form-control" />
+            <span asp-validation-for="NomeUsuario" class="text-danger"></span>
+        </div>
+
+    </div>
+
+
+    <div class="row">
+
+        <div class="form-group col-md-5">
+            <label asp-for="Senha" class="control-label"></label>
+            <input asp-for="Senha" class="form-control" />
+            <span asp-validation-for="Senha" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-2 text-center">
+            <label for="Active" class="control-label">Ativo</label>
+            <div class="input-group">
+                <div class="btn-group radioBtn mx-auto">
+                    <a class="btn btn-primary active" data-toggle="Active" data-title="True" onclick="setarValorBoleano(true, 'Active')">Sim</a>
+                    <a class="btn btn-primary notActive" data-toggle="Active" data-title="False" onclick="setarValorBoleano(false, 'Active')">Não</a>
+                </div>
+                <input type="hidden" asp-for="Ativo" value="True">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="RoleId" class="control-label"></label>
+                <input asp-for="RoleId" class="form-control" />
+                <span asp-validation-for="RoleId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Role" class="control-label"></label>
+                <input asp-for="Role" class="form-control" />
+                <span asp-validation-for="Role" class="text-danger"></span>
+            </div>
+
+
+
+
+
+            @*<div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" asp-for="Ativo" /> @Html.DisplayNameFor(model => model.Ativo)
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label asp-for="DataInclusao" class="control-label"></label>
+                    <input asp-for="DataInclusao" class="form-control" />
+                    <span asp-validation-for="DataInclusao" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="DataAlteracao" class="control-label"></label>
+                    <input asp-for="DataAlteracao" class="form-control" />
+                    <span asp-validation-for="DataAlteracao" class="text-danger"></span>
+                </div>*@
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="form-group">
+        <button type="submit" value="Confirmar" class="btn btn-primary rounded float-right"><i class="fas fa-save"></i> Confirmar</button>
+    </div>
+</form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
