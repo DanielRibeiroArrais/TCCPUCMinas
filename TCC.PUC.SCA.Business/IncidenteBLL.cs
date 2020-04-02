@@ -15,11 +15,23 @@ namespace TCC.PUC.SCA.Business
             _appSettings = appSettings;
         }
 
-        public void Inserir(Incidente pessoa)
+        public void Inserir(Incidente incidente)
         {
             try
             {
-                new IncidenteDAL(_appSettings).Inserir(pessoa);
+                new IncidenteDAL(_appSettings).Inserir(incidente);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public void Atualizar(Incidente incidente)
+        {
+            try
+            {
+                new IncidenteDAL(_appSettings).Atualizar(incidente);
             }
             catch (Exception ex)
             {

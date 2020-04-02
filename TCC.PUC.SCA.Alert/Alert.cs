@@ -9,7 +9,8 @@ using System.ServiceProcess;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using TCC.PUC.SCA.Alert.Models;
+using TCC.PUC.SCA.Model.DBEntities;
+using TCC.PUC.SCA.Model.SpecificEntities.Login;
 
 namespace TCC.PUC.SCA.Alert
 {
@@ -45,15 +46,18 @@ namespace TCC.PUC.SCA.Alert
             {
                 using (var httpClient = new HttpClient())
                 {
-                    HttpContent httpContent = new StringContent("{\"Usuario\": \"api\", \"Senha\": \"123456\"}", Encoding.UTF8, "application/json");
+                    ClientLoginRequest clientLoginRequest = new ClientLoginRequest
+                    {
+                        Usuario = "api",
+                        Senha = "123456"
+                    };
+
+                    HttpContent httpContent = new StringContent(JsonConvert.SerializeObject(clientLoginRequest), Encoding.UTF8, "application/json");
                     HttpResponseMessage responseAutenticar = httpClient.PostAsync("https://localhost:44396/api/Login/Autenticar", httpContent).Result;
                     object objectConversion1 = JsonConvert.DeserializeObject<ClientLoginResponse>(responseAutenticar.Content.ReadAsStringAsync().Result);
                     ClientLoginResponse clientLoginResponse = (ClientLoginResponse)Convert.ChangeType(objectConversion1, typeof(ClientLoginResponse));
 
-
-                    ClientLoginResponse c = new ClientLoginResponse();
-
-                    httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", clientLoginResponse.data.AccessToken);
+                    httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", clientLoginResponse.AccessToken);
                     HttpResponseMessage response = httpClient.GetAsync("https://localhost:44396/api/Alerta/Get").Result;
 
                     if (response.IsSuccessStatusCode)
@@ -69,7 +73,7 @@ namespace TCC.PUC.SCA.Alert
                             {
                                 try
                                 {
-                                    lAcoesProcessar.Add(async () => await Processar(alerta));
+                                    lAcoesProcessar.Add(async () => await Processar(alerta, clientLoginResponse));
                                 }
                                 catch (Exception ex)
                                 {
@@ -96,11 +100,25 @@ namespace TCC.PUC.SCA.Alert
             }
         }
 
-        public async Task Processar(Alerta alerta)
+        public async Task Processar(Alerta alerta, ClientLoginResponse clientLoginResponse)
         {
             string mensagem = alerta.BarragemNome + " " + alerta.PlanoAcaoMensagem;
 
-            new Mensageria.RabbitMQ().BasicPublish(mensagem, alerta.PessoaNome, alerta.PessoaEmail, alerta.PessoaCelular, alerta.PessoaSMS, alerta.PessoaWhatsapp);
+            new Business.Mensageria.RabbitMQ().BasicPublish(mensagem, alerta.PessoaNome, alerta.PessoaEmail, alerta.PessoaCelular, alerta.PessoaSMS, alerta.PessoaWhatsapp);
+
+            using (var httpClient = new HttpClient())
+            {
+                Incidente incidente = new Incidente();
+                incidente.Id = alerta.IncidenteId;
+                incidente.SensorDadosId = 1;
+                incidente.PlanoAcaoId = 1;
+                incidente.DataInclusao = DateTime.Now;
+                incidente.DataAlerta = DateTime.Now;
+
+                HttpContent httpContent = new StringContent(JsonConvert.SerializeObject(incidente), Encoding.UTF8, "application/json");
+                httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", clientLoginResponse.AccessToken);
+                HttpResponseMessage response = httpClient.PutAsync("https://localhost:44396/api/Alerta/Put", httpContent).Result;
+            }
         }
 
         protected override void OnStop()

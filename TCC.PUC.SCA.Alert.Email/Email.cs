@@ -1,7 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
+using System.Net;
+using System.Net.Mail;
 using System.ServiceProcess;
 using System.Threading;
+using TCC.PUC.SCA.Model.SpecificEntities.Common;
 
 namespace TCC.PUC.SCA.Alert.Email
 {
@@ -35,7 +39,12 @@ namespace TCC.PUC.SCA.Alert.Email
 
             try
             {
-                new Mensageria.RabbitMQ().BasicGetMessageBackup();
+                List<Mensagem> mensagens = new Business.Mensageria.RabbitMQ().BasicGetMessage("Email");
+
+                foreach (Mensagem mensagem in mensagens)
+                {
+                    EnviarEmail(mensagem);
+                }
             }
             catch (Exception ex)
             {
@@ -44,6 +53,27 @@ namespace TCC.PUC.SCA.Alert.Email
             finally
             {
                 tempo.Change(tempoParadoAplicacao, tempoParadoAplicacao);
+            }
+        }
+
+        private void EnviarEmail(Mensagem mensagem)
+        {
+            MailMessage mail = new MailMessage();
+
+            mail.From = new MailAddress("tccpucminasdanielarrais@gmail.com");
+            mail.To.Add(mensagem.Email);
+            mail.Subject = "ALERTA";
+            mail.Body = mensagem.Msg;
+
+            using (var smtp = new SmtpClient("smtp.gmail.com"))
+            {
+                smtp.EnableSsl = true;
+                smtp.Port = 587;
+                smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+                smtp.UseDefaultCredentials = false;
+                smtp.Credentials = new NetworkCredential("tccpucminasdanielarrais@gmail.com", "@tcc@puc@minas");
+
+                smtp.Send(mail);
             }
         }
 

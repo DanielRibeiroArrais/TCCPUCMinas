@@ -24,23 +24,24 @@ namespace TCC.PUC.SCA.API.Controllers
         [AllowAnonymous]
         [ProducesResponseType(typeof(ClientLoginResponse), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult<ClientLoginResponse> Autenticar([FromBody]ClientLoginRequest clientLoginRequest)
+        public ClientLoginResponse Autenticar([FromBody]ClientLoginRequest clientLoginRequest)
         {
             try
             {
                 if (ModelState.IsValid)
                 {
-                    return CustomResponse((new ClienteLoginBLL(_appSettings).AuthenticationRequest(clientLoginRequest)));
+                    return new ClienteLoginBLL(_appSettings).AuthenticationRequest(clientLoginRequest);
                 }
                 else
                 {
-                    return CustomResponse(ModelState);
+                    return null;
                 }
             }
             catch (Exception ex)
             {
                 ReportError(ex.Message);
-                return CustomResponse();
+                //return CustomResponse();
+                return null;
             }
         }
     }

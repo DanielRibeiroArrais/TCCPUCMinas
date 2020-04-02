@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.ServiceProcess;
 using System.Threading;
+using TCC.PUC.SCA.Model.SpecificEntities.Common;
 
 namespace TCC.PUC.SCA.Alert.WhatsApp
 {
@@ -35,7 +37,12 @@ namespace TCC.PUC.SCA.Alert.WhatsApp
 
             try
             {
-                new Mensageria.RabbitMQ().BasicGetMessageBackup();
+                List<Mensagem> mensagens = new Business.Mensageria.RabbitMQ().BasicGetMessage("WhatsApp");
+
+                foreach (Mensagem mensagem in mensagens)
+                {
+                    EnviarWhatsApp(mensagem);
+                }
             }
             catch (Exception ex)
             {
@@ -44,6 +51,11 @@ namespace TCC.PUC.SCA.Alert.WhatsApp
             {
                 tempo.Change(tempoParadoAplicacao, tempoParadoAplicacao);
             }
+        }
+
+        private void EnviarWhatsApp(Mensagem mensagem)
+        {
+
         }
 
         protected override void OnStop()

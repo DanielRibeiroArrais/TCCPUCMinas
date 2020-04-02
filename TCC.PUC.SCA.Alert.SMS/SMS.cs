@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.Net;
 using System.Net.Http;
 using System.ServiceProcess;
 using System.Threading;
+using TCC.PUC.SCA.Model.SpecificEntities.Common;
 
 namespace TCC.PUC.SCA.Alert.SMS
 {
@@ -38,7 +40,12 @@ namespace TCC.PUC.SCA.Alert.SMS
 
             try
             {
-                new Mensageria.RabbitMQ().BasicGetMessageBackup();
+                List<Mensagem> mensagens = new Business.Mensageria.RabbitMQ().BasicGetMessage("SMS");
+
+                foreach (Mensagem mensagem in mensagens)
+                {
+                    EnviarSMS(mensagem);
+                }
             }
             catch (Exception ex)
             {
@@ -48,6 +55,13 @@ namespace TCC.PUC.SCA.Alert.SMS
             {
                 tempo.Change(tempoParadoAplicacao, tempoParadoAplicacao);
             }
+        }
+
+        private void EnviarSMS(Mensagem mensagem)
+        {
+            const string API_KEY = "e513a253-658e-470b-b22d-9f7266924d40";
+            var textMessageService = new Comtele.Sdk.Services.TextMessageService(API_KEY);
+            textMessageService.Send("Barragem", mensagem.Msg, new string[] { mensagem.SMS.Replace("(", "").Replace(")", "").Replace("-", "") });
         }
 
         protected override void OnStop()

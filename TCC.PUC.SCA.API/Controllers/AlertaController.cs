@@ -39,5 +39,21 @@ namespace TCC.PUC.SCA.API.Controllers
                 throw new Exception();
             }
         }
+
+        [HttpPut]
+        [Authorize(Roles = "APIAcesso")]
+        [ProducesResponseType(typeof(List<Alerta>), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public void Put([FromBody]Incidente incidente)
+        {
+            try
+            {
+                new IncidenteBLL(_appSettings).Atualizar(incidente);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception();
+            }
+        }
     }
 }

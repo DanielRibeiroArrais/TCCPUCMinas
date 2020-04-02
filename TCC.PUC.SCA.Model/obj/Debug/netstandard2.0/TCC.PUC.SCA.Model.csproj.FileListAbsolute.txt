@@ -1,0 +1,15 @@
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Model\bin\Debug\netstandard2.0\TCC.PUC.SCA.Model.deps.json
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Model\bin\Debug\netstandard2.0\TCC.PUC.SCA.Model.dll
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Model\bin\Debug\netstandard2.0\TCC.PUC.SCA.Model.pdb
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Model\bin\Debug\netstandard2.0\System.ComponentModel.DataAnnotations.dll
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Model\bin\Debug\netstandard2.0\System.Configuration.dll
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Model\bin\Debug\netstandard2.0\System.Security.dll
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Model\bin\Debug\netstandard2.0\System.ComponentModel.DataAnnotations.xml
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Model\bin\Debug\netstandard2.0\System.Configuration.xml
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Model\bin\Debug\netstandard2.0\System.Security.xml
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Model\obj\Debug\netstandard2.0\TCC.PUC.SCA.Model.AssemblyInfoInputs.cache
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Model\obj\Debug\netstandard2.0\TCC.PUC.SCA.Model.AssemblyInfo.cs
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Model\obj\Debug\netstandard2.0\TCC.PUC.SCA.Model.csproj.CopyComplete
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Model\obj\Debug\netstandard2.0\TCC.PUC.SCA.Model.dll
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Model\obj\Debug\netstandard2.0\TCC.PUC.SCA.Model.pdb
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Model\obj\Debug\netstandard2.0\TCC.PUC.SCA.Model.csprojAssemblyReference.cache

@@ -47,11 +47,11 @@ namespace TCC.PUC.SCA.Data
             }
         }
 
-        public void Atualizar(Pessoa pessoa)
+        public void Atualizar(Incidente incidente)
         {
             StringBuilder sb = new StringBuilder();
             sb.Append("UPDATE [dbo].[Incidente] SET");
-            sb.Append(" PlanoAcaoId = @PlanoAcaoId, DataInclusao, DataAlerta");
+            sb.Append(" DataAlerta = @DataAlerta");
             sb.Append(" WHERE Id = @Id");
 
             try
@@ -60,15 +60,8 @@ namespace TCC.PUC.SCA.Data
                 {
                     using (SqlCommand cmd = new SqlCommand(sb.ToString(), GetConexaoSql()))
                     {
-                        cmd.Parameters.Add(new SqlParameter("@Id", pessoa.Id));
-                        cmd.Parameters.Add(new SqlParameter("@BarragemId", pessoa.BarragemId));
-                        cmd.Parameters.Add(new SqlParameter("@Nome", pessoa.Nome ?? (object)DBNull.Value));
-                        cmd.Parameters.Add(new SqlParameter("@Situacao", pessoa.Situacao));
-                        cmd.Parameters.Add(new SqlParameter("@Email", pessoa.Email ?? (object)DBNull.Value));
-                        cmd.Parameters.Add(new SqlParameter("@Celular", pessoa.Celular ?? (object)DBNull.Value));
-                        cmd.Parameters.Add(new SqlParameter("@SMS", pessoa.SMS ?? (object)DBNull.Value));
-                        cmd.Parameters.Add(new SqlParameter("@Whatsapp", pessoa.Whatsapp ?? (object)DBNull.Value));
-                        cmd.Parameters.Add(new SqlParameter("@DataAlerta", pessoa.DataAlteracao == null ? (object)DBNull.Value : pessoa.DataAlteracao));
+                        cmd.Parameters.Add(new SqlParameter("@Id", incidente.Id));
+                        cmd.Parameters.Add(new SqlParameter("@DataAlerta", incidente.DataAlerta == null ? (object)DBNull.Value : incidente.DataAlerta));
 
                         cmd.ExecuteNonQuery();
                     }

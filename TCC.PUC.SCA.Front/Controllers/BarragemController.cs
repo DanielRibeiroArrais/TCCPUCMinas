@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using System;
+using TCC.PUC.SCA.Model.DBEntities;
 using TCC.PUC.SCA.Model.SpecificEntities.Restricted;
 
 namespace TCC.PUC.SCA.Front.Controllers
@@ -39,7 +40,7 @@ namespace TCC.PUC.SCA.Front.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(Model.DBEntities.Barragem barragem)
+        public ActionResult Create(Barragem barragem)
         {
             try
             {

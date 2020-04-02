@@ -1,0 +1,21 @@
+﻿.legenda {
+    padding: 5px 10px 5px 10px;
+}
+
+.legendaTitulo {
+    font-size: small;
+    font-weight: bold;
+}
+
+.legendaConteudo {
+    font-size: small;
+}
+
+
+.bm_bottomLeftOverlay {
+    visibility: hidden;
+}
+
+.bm_bottomRightOverlay {
+    visibility: hidden;
+}

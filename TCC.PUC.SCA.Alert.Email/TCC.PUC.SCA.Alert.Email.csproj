@@ -62,14 +62,22 @@
     <Compile Include="Email.Designer.cs">
       <DependentUpon>Email.cs</DependentUpon>
     </Compile>
-    <Compile Include="Mensageria\RabbitMQ.cs" />
-    <Compile Include="Mensageria\RabbitMQConectar.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TCC.PUC.SCA.Business\TCC.PUC.SCA.Business.csproj">
+      <Project>{0B1BA0CE-CF19-4D1D-B8C0-871F7746CEC5}</Project>
+      <Name>TCC.PUC.SCA.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TCC.PUC.SCA.Model\TCC.PUC.SCA.Model.csproj">
+      <Project>{6E59C98F-BC7F-4D52-9B65-332701E86E0B}</Project>
+      <Name>TCC.PUC.SCA.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

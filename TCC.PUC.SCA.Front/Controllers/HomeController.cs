@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using TCC.PUC.SCA.Business;
 using TCC.PUC.SCA.Front.Models;
 using TCC.PUC.SCA.Model.DBEntities;
+using TCC.PUC.SCA.Model.SpecificEntities.Common;
 using TCC.PUC.SCA.Model.SpecificEntities.Restricted;
 
 namespace TCC.PUC.SCA.Front.Controllers

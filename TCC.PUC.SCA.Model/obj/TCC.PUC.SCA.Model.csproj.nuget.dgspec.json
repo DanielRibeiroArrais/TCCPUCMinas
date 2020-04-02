@@ -23,7 +23,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp2.2"
+          "netstandard2.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -33,7 +33,7 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp2.2": {
+          "netstandard2.0": {
             "projectReferences": {}
           }
         },
@@ -44,21 +44,13 @@
         }
       },
       "frameworks": {
-        "netcoreapp2.2": {
+        "netstandard2.0": {
           "dependencies": {
-            "Microsoft.NETCore.App": {
+            "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.2.0, )",
+              "version": "[2.0.3, )",
               "autoReferenced": true
-            },
-            "Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[12.0.3, )"
-            },
-            "System.IdentityModel.Tokens.Jwt": {
-              "target": "Package",
-              "version": "[6.5.0, )"
             }
           },
           "imports": [

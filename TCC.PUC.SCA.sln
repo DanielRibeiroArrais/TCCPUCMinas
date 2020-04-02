@@ -5,12 +5,6 @@ VisualStudioVersion = 16.0.29025.244
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TCC.PUC.SCA.Front", "TCC.PUC.SCA.Front\TCC.PUC.SCA.Front.csproj", "{3F8597E2-07EE-40B7-B598-D18546C11932}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TCC.PUC.SCA.Model", "TCC.PUC.SCA.Model\TCC.PUC.SCA.Model.csproj", "{A3CB8D5F-5363-4F7E-90DA-C7DBC4C5C962}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TCC.PUC.SCA.Data", "TCC.PUC.SCA.Data\TCC.PUC.SCA.Data.csproj", "{449A436C-7590-4006-BF27-24B98AB2C64F}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TCC.PUC.SCA.Business", "TCC.PUC.SCA.Business\TCC.PUC.SCA.Business.csproj", "{CB7E75B7-8CB5-40C3-AC5C-40C4FD6D8812}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TCC.PUC.SCA.API", "TCC.PUC.SCA.API\TCC.PUC.SCA.API.csproj", "{FED68A6C-FD90-4A90-A0E6-7F375C778FE9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCC.PUC.SCA.Alert", "TCC.PUC.SCA.Alert\TCC.PUC.SCA.Alert.csproj", "{F727F0EC-3C6B-4967-BCE0-51557D389416}"
@@ -20,6 +14,19 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCC.PUC.SCA.Alert.SMS", "TCC.PUC.SCA.Alert.SMS\TCC.PUC.SCA.Alert.SMS.csproj", "{7D63DF55-08F6-4DAE-B528-A4DCD574DAEA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCC.PUC.SCA.Alert.WhatsApp", "TCC.PUC.SCA.Alert.WhatsApp\TCC.PUC.SCA.Alert.WhatsApp.csproj", "{A9AF5DDC-3A47-41E0-9995-54E23DBCE52A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{84982B9A-6AEB-41AF-8AD5-1E62AD3AF94C}"
+	ProjectSection(SolutionItems) = preProject
+		Documentos\Anotacoes.txt = Documentos\Anotacoes.txt
+		Documentos\script.sql = Documentos\script.sql
+		Documentos\TCC Daniel Ribeiro Arrais.doc = Documentos\TCC Daniel Ribeiro Arrais.doc
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TCC.PUC.SCA.Model", "TCC.PUC.SCA.Model\TCC.PUC.SCA.Model.csproj", "{6E59C98F-BC7F-4D52-9B65-332701E86E0B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TCC.PUC.SCA.Business", "TCC.PUC.SCA.Business\TCC.PUC.SCA.Business.csproj", "{0B1BA0CE-CF19-4D1D-B8C0-871F7746CEC5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TCC.PUC.SCA.Data", "TCC.PUC.SCA.Data\TCC.PUC.SCA.Data.csproj", "{89367E9D-10A0-4D6E-928E-8D7A0931045F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,18 +38,6 @@ Global
 		{3F8597E2-07EE-40B7-B598-D18546C11932}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F8597E2-07EE-40B7-B598-D18546C11932}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F8597E2-07EE-40B7-B598-D18546C11932}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A3CB8D5F-5363-4F7E-90DA-C7DBC4C5C962}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A3CB8D5F-5363-4F7E-90DA-C7DBC4C5C962}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A3CB8D5F-5363-4F7E-90DA-C7DBC4C5C962}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A3CB8D5F-5363-4F7E-90DA-C7DBC4C5C962}.Release|Any CPU.Build.0 = Release|Any CPU
-		{449A436C-7590-4006-BF27-24B98AB2C64F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{449A436C-7590-4006-BF27-24B98AB2C64F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{449A436C-7590-4006-BF27-24B98AB2C64F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{449A436C-7590-4006-BF27-24B98AB2C64F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CB7E75B7-8CB5-40C3-AC5C-40C4FD6D8812}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CB7E75B7-8CB5-40C3-AC5C-40C4FD6D8812}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CB7E75B7-8CB5-40C3-AC5C-40C4FD6D8812}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CB7E75B7-8CB5-40C3-AC5C-40C4FD6D8812}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FED68A6C-FD90-4A90-A0E6-7F375C778FE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FED68A6C-FD90-4A90-A0E6-7F375C778FE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FED68A6C-FD90-4A90-A0E6-7F375C778FE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -63,6 +58,18 @@ Global
 		{A9AF5DDC-3A47-41E0-9995-54E23DBCE52A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9AF5DDC-3A47-41E0-9995-54E23DBCE52A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9AF5DDC-3A47-41E0-9995-54E23DBCE52A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E59C98F-BC7F-4D52-9B65-332701E86E0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E59C98F-BC7F-4D52-9B65-332701E86E0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E59C98F-BC7F-4D52-9B65-332701E86E0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E59C98F-BC7F-4D52-9B65-332701E86E0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B1BA0CE-CF19-4D1D-B8C0-871F7746CEC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B1BA0CE-CF19-4D1D-B8C0-871F7746CEC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B1BA0CE-CF19-4D1D-B8C0-871F7746CEC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B1BA0CE-CF19-4D1D-B8C0-871F7746CEC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89367E9D-10A0-4D6E-928E-8D7A0931045F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89367E9D-10A0-4D6E-928E-8D7A0931045F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89367E9D-10A0-4D6E-928E-8D7A0931045F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89367E9D-10A0-4D6E-928E-8D7A0931045F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -78,29 +85,29 @@ Global
 		SccProjectUniqueName1 = TCC.PUC.SCA.Front\\TCC.PUC.SCA.Front.csproj
 		SccProjectName1 = TCC.PUC.SCA.Front
 		SccLocalPath1 = TCC.PUC.SCA.Front
-		SccProjectUniqueName2 = TCC.PUC.SCA.Model\\TCC.PUC.SCA.Model.csproj
-		SccProjectName2 = TCC.PUC.SCA.Model
-		SccLocalPath2 = TCC.PUC.SCA.Model
-		SccProjectUniqueName3 = TCC.PUC.SCA.Data\\TCC.PUC.SCA.Data.csproj
-		SccProjectName3 = TCC.PUC.SCA.Data
-		SccLocalPath3 = TCC.PUC.SCA.Data
-		SccProjectUniqueName4 = TCC.PUC.SCA.Business\\TCC.PUC.SCA.Business.csproj
-		SccProjectName4 = TCC.PUC.SCA.Business
-		SccLocalPath4 = TCC.PUC.SCA.Business
-		SccProjectUniqueName5 = TCC.PUC.SCA.Alert\\TCC.PUC.SCA.Alert.csproj
-		SccProjectName5 = TCC.PUC.SCA.Alert
-		SccLocalPath5 = TCC.PUC.SCA.Alert
-		SccProjectUniqueName6 = TCC.PUC.SCA.Alert.Email\\TCC.PUC.SCA.Alert.Email.csproj
-		SccProjectName6 = TCC.PUC.SCA.Alert.Email
-		SccLocalPath6 = TCC.PUC.SCA.Alert.Email
-		SccProjectUniqueName7 = TCC.PUC.SCA.Alert.SMS\\TCC.PUC.SCA.Alert.SMS.csproj
-		SccProjectName7 = TCC.PUC.SCA.Alert.SMS
-		SccLocalPath7 = TCC.PUC.SCA.Alert.SMS
-		SccProjectUniqueName8 = TCC.PUC.SCA.API\\TCC.PUC.SCA.API.csproj
-		SccProjectName8 = TCC.PUC.SCA.API
-		SccLocalPath8 = TCC.PUC.SCA.API
-		SccProjectUniqueName9 = TCC.PUC.SCA.Alert.WhatsApp\\TCC.PUC.SCA.Alert.WhatsApp.csproj
-		SccProjectName9 = TCC.PUC.SCA.Alert.WhatsApp
-		SccLocalPath9 = TCC.PUC.SCA.Alert.WhatsApp
+		SccProjectUniqueName2 = TCC.PUC.SCA.Alert\\TCC.PUC.SCA.Alert.csproj
+		SccProjectName2 = TCC.PUC.SCA.Alert
+		SccLocalPath2 = TCC.PUC.SCA.Alert
+		SccProjectUniqueName3 = TCC.PUC.SCA.Alert.Email\\TCC.PUC.SCA.Alert.Email.csproj
+		SccProjectName3 = TCC.PUC.SCA.Alert.Email
+		SccLocalPath3 = TCC.PUC.SCA.Alert.Email
+		SccProjectUniqueName4 = TCC.PUC.SCA.Alert.SMS\\TCC.PUC.SCA.Alert.SMS.csproj
+		SccProjectName4 = TCC.PUC.SCA.Alert.SMS
+		SccLocalPath4 = TCC.PUC.SCA.Alert.SMS
+		SccProjectUniqueName5 = TCC.PUC.SCA.API\\TCC.PUC.SCA.API.csproj
+		SccProjectName5 = TCC.PUC.SCA.API
+		SccLocalPath5 = TCC.PUC.SCA.API
+		SccProjectUniqueName6 = TCC.PUC.SCA.Alert.WhatsApp\\TCC.PUC.SCA.Alert.WhatsApp.csproj
+		SccProjectName6 = TCC.PUC.SCA.Alert.WhatsApp
+		SccLocalPath6 = TCC.PUC.SCA.Alert.WhatsApp
+		SccProjectUniqueName7 = TCC.PUC.SCA.Model\\TCC.PUC.SCA.Model.csproj
+		SccProjectName7 = TCC.PUC.SCA.Model
+		SccLocalPath7 = TCC.PUC.SCA.Model
+		SccProjectUniqueName8 = TCC.PUC.SCA.Business\\TCC.PUC.SCA.Business.csproj
+		SccProjectName8 = TCC.PUC.SCA.Business
+		SccLocalPath8 = TCC.PUC.SCA.Business
+		SccProjectUniqueName9 = TCC.PUC.SCA.Data\\TCC.PUC.SCA.Data.csproj
+		SccProjectName9 = TCC.PUC.SCA.Data
+		SccLocalPath9 = TCC.PUC.SCA.Data
 	EndGlobalSection
 EndGlobal

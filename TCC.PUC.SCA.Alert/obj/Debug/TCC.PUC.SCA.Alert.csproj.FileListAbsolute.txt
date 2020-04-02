@@ -59,6 +59,8 @@ C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Alert\bin\Debug\System.Security.Perm
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Alert\bin\Debug\System.Security.Principal.Windows.dll
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Alert\bin\Debug\System.Text.Encodings.Web.dll
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Alert\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Alert\bin\Debug\TCC.PUC.SCA.Model.dll
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Alert\bin\Debug\TCC.PUC.SCA.Model.pdb
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Alert\bin\Debug\Microsoft.AspNetCore.Antiforgery.xml
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Alert\bin\Debug\Microsoft.AspNetCore.Authentication.Abstractions.xml
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Alert\bin\Debug\Microsoft.AspNetCore.Authentication.Core.xml
@@ -109,7 +111,11 @@ C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Alert\bin\Debug\System.Numerics.Vect
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Alert\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Alert\bin\Debug\System.Text.Encodings.Web.xml
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Alert\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Alert\obj\Debug\TCC.PUC.SCA.Alert.csprojAssemblyReference.cache
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Alert\obj\Debug\TCC.PUC.SCA.Alert.csproj.CopyComplete
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Alert\obj\Debug\TCC.PUC.SCA.Alert.exe
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Alert\obj\Debug\TCC.PUC.SCA.Alert.pdb
-C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Alert\obj\Debug\TCC.PUC.SCA.Alert.csprojAssemblyReference.cache
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Alert\bin\Debug\TCC.PUC.SCA.Business.dll
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Alert\bin\Debug\TCC.PUC.SCA.Data.dll
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Alert\bin\Debug\TCC.PUC.SCA.Business.pdb
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Alert\bin\Debug\TCC.PUC.SCA.Data.pdb

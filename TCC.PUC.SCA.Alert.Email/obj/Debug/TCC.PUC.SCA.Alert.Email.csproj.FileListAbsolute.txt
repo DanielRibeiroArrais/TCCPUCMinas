@@ -8,3 +8,10 @@ C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Alert.Email\bin\Debug\RabbitMQ.Clien
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Alert.Email\obj\Debug\TCC.PUC.SCA.Alert.Email.csproj.CopyComplete
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Alert.Email\obj\Debug\TCC.PUC.SCA.Alert.Email.exe
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Alert.Email\obj\Debug\TCC.PUC.SCA.Alert.Email.pdb
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Alert.Email\obj\Debug\TCC.PUC.SCA.Alert.Email.csprojAssemblyReference.cache
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Alert.Email\bin\Debug\TCC.PUC.SCA.Business.dll
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Alert.Email\bin\Debug\TCC.PUC.SCA.Model.dll
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Alert.Email\bin\Debug\TCC.PUC.SCA.Data.dll
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Alert.Email\bin\Debug\TCC.PUC.SCA.Business.pdb
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Alert.Email\bin\Debug\TCC.PUC.SCA.Model.pdb
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Alert.Email\bin\Debug\TCC.PUC.SCA.Data.pdb
