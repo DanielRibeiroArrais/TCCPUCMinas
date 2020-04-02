@@ -2,13 +2,7 @@ C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Data\bin\Debug\netstandard2.0\TCC.PU
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Data\bin\Debug\netstandard2.0\TCC.PUC.SCA.Data.dll
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Data\bin\Debug\netstandard2.0\TCC.PUC.SCA.Data.pdb
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Data\bin\Debug\netstandard2.0\TCC.PUC.SCA.Model.dll
-C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Data\bin\Debug\netstandard2.0\System.ComponentModel.DataAnnotations.dll
-C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Data\bin\Debug\netstandard2.0\System.Configuration.dll
-C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Data\bin\Debug\netstandard2.0\System.Security.dll
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Data\bin\Debug\netstandard2.0\TCC.PUC.SCA.Model.pdb
-C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Data\bin\Debug\netstandard2.0\System.ComponentModel.DataAnnotations.xml
-C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Data\bin\Debug\netstandard2.0\System.Configuration.xml
-C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Data\bin\Debug\netstandard2.0\System.Security.xml
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Data\obj\Debug\netstandard2.0\TCC.PUC.SCA.Data.csprojAssemblyReference.cache
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Data\obj\Debug\netstandard2.0\TCC.PUC.SCA.Data.AssemblyInfoInputs.cache
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Data\obj\Debug\netstandard2.0\TCC.PUC.SCA.Data.AssemblyInfo.cs

@@ -1,5 +1,5 @@
-# Prova de Conceito - Arquitetura de Software DistribuÌdo - PUC Minas 2020
+# Prova de Conceito - Arquitetura de Software Distribu√≠do - PUC Minas 2020
 
-Plataforma de Gest„o e Controle Ambiental para Mineradora
+Plataforma de Gest√£o e Controle Ambiental para Mineradora
 
-RepositÛrio que contÈm os cÛdigos fontes da prova de conceito para o trabalho de conclus„o de curso da pÛs graduaÁ„o em Arquitetura de Sistemas DistribuÌdos.
+Reposit√≥rio que cont√©m os c√≥digos fontes da prova de conceito para o trabalho de conclus√£o de curso da p√≥s gradua√ß√£o em Arquitetura de Sistemas Distribu√≠dos.
