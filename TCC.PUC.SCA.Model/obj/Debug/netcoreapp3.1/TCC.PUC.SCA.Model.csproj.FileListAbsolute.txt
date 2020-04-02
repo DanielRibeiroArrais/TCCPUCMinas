@@ -1,7 +1,0 @@
-C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Model\bin\Debug\netcoreapp3.1\TCC.PUC.SCA.Model.deps.json
-C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Model\bin\Debug\netcoreapp3.1\TCC.PUC.SCA.Model.dll
-C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Model\bin\Debug\netcoreapp3.1\TCC.PUC.SCA.Model.pdb
-C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Model\obj\Debug\netcoreapp3.1\TCC.PUC.SCA.Model.AssemblyInfoInputs.cache
-C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Model\obj\Debug\netcoreapp3.1\TCC.PUC.SCA.Model.AssemblyInfo.cs
-C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Model\obj\Debug\netcoreapp3.1\TCC.PUC.SCA.Model.dll
-C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Model\obj\Debug\netcoreapp3.1\TCC.PUC.SCA.Model.pdb
