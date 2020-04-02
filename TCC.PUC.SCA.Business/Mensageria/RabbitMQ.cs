@@ -73,7 +73,7 @@ namespace TCC.PUC.SCA.Business.Mensageria
                                 mensagens.Add(mensagem);
                             }
                         }
-                        catch (Exception ex)
+                        catch (Exception)
                         {
                             continue;
                         }

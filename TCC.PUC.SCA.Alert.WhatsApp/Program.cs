@@ -1,4 +1,6 @@
-﻿namespace TCC.PUC.SCA.Alert.WhatsApp
+﻿using System.ServiceProcess;
+
+namespace TCC.PUC.SCA.Alert.WhatsApp
 {
     static class Program
     {
@@ -12,7 +14,7 @@
             ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[]
             {
-                new Email()
+                new WhatsApp()
             };
             ServiceBase.Run(ServicesToRun);
 #endif

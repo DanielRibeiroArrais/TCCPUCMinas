@@ -177,7 +177,7 @@ namespace TCC.PUC.SCA.Front.Controllers
 
                 return RedirectToAction(nameof(HomeController.Login), "Home", new { returnUrl = "", msgLogin = "Usuário/Senha incorreto!" });
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 throw;
             }

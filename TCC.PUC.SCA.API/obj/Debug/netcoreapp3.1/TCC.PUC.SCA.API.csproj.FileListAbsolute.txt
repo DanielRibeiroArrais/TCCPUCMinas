@@ -1,4 +1,3 @@
-C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.API\obj\Debug\netcoreapp3.1\TCC.PUC.SCA.API.csprojAssemblyReference.cache
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.API\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.API\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.API\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -43,6 +42,7 @@ C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.API\bin\Debug\netcoreapp3.1\Microsof
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.API\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.API\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.API\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.API\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.API\bin\Debug\netcoreapp3.1\Scrutor.dll
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Annotations.dll
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Filters.dll
@@ -121,6 +121,7 @@ C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.API\bin\Debug\netcoreapp3.1\TCC.PUC.
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.API\bin\Debug\netcoreapp3.1\TCC.PUC.SCA.Business.pdb
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.API\bin\Debug\netcoreapp3.1\TCC.PUC.SCA.Model.pdb
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.API\bin\Debug\netcoreapp3.1\TCC.PUC.SCA.Data.pdb
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.API\obj\Debug\netcoreapp3.1\TCC.PUC.SCA.API.csprojAssemblyReference.cache
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.API\obj\Debug\netcoreapp3.1\staticwebassets\TCC.PUC.SCA.API.StaticWebAssets.Manifest.cache
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.API\obj\Debug\netcoreapp3.1\staticwebassets\TCC.PUC.SCA.API.StaticWebAssets.xml
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.API\obj\Debug\netcoreapp3.1\TCC.PUC.SCA.API.MvcApplicationPartsAssemblyInfo.cs
@@ -131,4 +132,3 @@ C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.API\obj\Debug\netcoreapp3.1\TCC.PUC.
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.API\obj\Debug\netcoreapp3.1\TCC.PUC.SCA.API.csproj.CopyComplete
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.API\obj\Debug\netcoreapp3.1\TCC.PUC.SCA.API.dll
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.API\obj\Debug\netcoreapp3.1\TCC.PUC.SCA.API.pdb
-C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.API\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll

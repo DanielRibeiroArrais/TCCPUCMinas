@@ -75,7 +75,7 @@ namespace TCC.PUC.SCA.Alert
                                 {
                                     lAcoesProcessar.Add(async () => await Processar(alerta, clientLoginResponse));
                                 }
-                                catch (Exception ex)
+                                catch (Exception)
                                 {
                                     continue;
                                 }
@@ -90,7 +90,7 @@ namespace TCC.PUC.SCA.Alert
                         throw new Exception($"Content: {response.Content.ReadAsStringAsync().Result}");
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
 
             }

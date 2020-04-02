@@ -47,7 +47,7 @@ namespace TCC.PUC.SCA.Alert.SMS
                     EnviarSMS(mensagem);
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
 
             }

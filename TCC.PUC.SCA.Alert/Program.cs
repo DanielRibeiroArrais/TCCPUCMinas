@@ -1,4 +1,6 @@
-﻿namespace TCC.PUC.SCA.Alert
+﻿using System.ServiceProcess;
+
+namespace TCC.PUC.SCA.Alert
 {
     static class Program
     {

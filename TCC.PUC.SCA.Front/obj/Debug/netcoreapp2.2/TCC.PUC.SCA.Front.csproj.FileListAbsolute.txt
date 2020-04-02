@@ -1,8 +1,3 @@
-C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Front\obj\Debug\netcoreapp2.2\TCC.PUC.SCA.Front.csprojAssemblyReference.cache
-C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Front\obj\Debug\netcoreapp2.2\TCC.PUC.SCA.Front.RazorAssemblyInfo.cache
-C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Front\obj\Debug\netcoreapp2.2\TCC.PUC.SCA.Front.RazorAssemblyInfo.cs
-C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Front\obj\Debug\netcoreapp2.2\TCC.PUC.SCA.Front.AssemblyInfoInputs.cache
-C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Front\obj\Debug\netcoreapp2.2\TCC.PUC.SCA.Front.AssemblyInfo.cs
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Front\bin\Debug\netcoreapp2.2\appsettings.Development.json
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Front\bin\Debug\netcoreapp2.2\appsettings.json
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Front\bin\Debug\netcoreapp2.2\libman.json
@@ -20,6 +15,11 @@ C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Front\bin\Debug\netcoreapp2.2\TCC.PU
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Front\bin\Debug\netcoreapp2.2\TCC.PUC.SCA.Business.pdb
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Front\bin\Debug\netcoreapp2.2\TCC.PUC.SCA.Model.pdb
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Front\bin\Debug\netcoreapp2.2\TCC.PUC.SCA.Data.pdb
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Front\obj\Debug\netcoreapp2.2\TCC.PUC.SCA.Front.csprojAssemblyReference.cache
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Front\obj\Debug\netcoreapp2.2\TCC.PUC.SCA.Front.RazorAssemblyInfo.cache
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Front\obj\Debug\netcoreapp2.2\TCC.PUC.SCA.Front.RazorAssemblyInfo.cs
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Front\obj\Debug\netcoreapp2.2\TCC.PUC.SCA.Front.AssemblyInfoInputs.cache
+C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Front\obj\Debug\netcoreapp2.2\TCC.PUC.SCA.Front.AssemblyInfo.cs
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Front\obj\Debug\netcoreapp2.2\TCC.PUC.SCA.Front.TagHelpers.input.cache
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Front\obj\Debug\netcoreapp2.2\TCC.PUC.SCA.Front.TagHelpers.output.cache
 C:\Projetos\Pessoal\TCC.PUC.SCA\TCC.PUC.SCA.Front\obj\Debug\netcoreapp2.2\TCC.PUC.SCA.Front.RazorCoreGenerate.cache

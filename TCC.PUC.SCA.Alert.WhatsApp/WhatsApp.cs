@@ -44,7 +44,7 @@ namespace TCC.PUC.SCA.Alert.WhatsApp
                     EnviarWhatsApp(mensagem);
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
             }
             finally

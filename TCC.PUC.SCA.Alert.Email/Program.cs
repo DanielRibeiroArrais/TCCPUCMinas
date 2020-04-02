@@ -1,4 +1,6 @@
-﻿namespace TCC.PUC.SCA.Alert.Email
+﻿using System.ServiceProcess;
+
+namespace TCC.PUC.SCA.Alert.Email
 {
     static class Program
     {

@@ -46,7 +46,7 @@ namespace TCC.PUC.SCA.Alert.Email
                     EnviarEmail(mensagem);
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
 
             }
