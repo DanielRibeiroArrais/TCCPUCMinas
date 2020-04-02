@@ -18,6 +18,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{84982B9A-6AEB-41AF-8AD5-1E62AD3AF94C}"
 	ProjectSection(SolutionItems) = preProject
 		Documentos\Anotacoes.txt = Documentos\Anotacoes.txt
+		README.md = README.md
 		Documentos\script.sql = Documentos\script.sql
 		Documentos\TCC Daniel Ribeiro Arrais.doc = Documentos\TCC Daniel Ribeiro Arrais.doc
 	EndProjectSection
